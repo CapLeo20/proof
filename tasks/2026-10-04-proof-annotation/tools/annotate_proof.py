@@ -1,7 +1,11 @@
+# /// script
+# requires-python = ">=3.10"
+# dependencies = ["pymupdf>=1.24.3", "python-docx>=1.1"]
+# ///
 """Annotate the Frontiers author's proof with the authors' query responses and corrections.
 
 Usage:
-    python tools/annotate_proof.py <proof.pdf> <Author_Queries_Response.docx> <out.pdf> <checklist.md>
+    uv run tools/annotate_proof.py <proof.pdf> <Author_Queries_Response.docx> <out.pdf> <checklist.md>
 
 * Each query response is read verbatim from the Word file. Only the edits listed in
   RESPONSE_EDITS are applied, and every edit must match exactly once.

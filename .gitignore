@@ -1,1 +1,17 @@
+# Python
 __pycache__/
+*.pyc
+.venv/
+venv/
+
+# 任务里的中间文件
+tmp/
+
+# 密钥和本地配置
+.env
+.env.*
+
+# 系统 / Office 临时文件
+.DS_Store
+Thumbs.db
+~$*

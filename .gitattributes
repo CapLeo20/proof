@@ -1,0 +1,9 @@
+# 统一换行符，避免 Windows / Linux 之间出现整文件 diff
+* text=auto
+
+*.pdf  binary
+*.docx binary
+*.xlsx binary
+*.pptx binary
+*.png  binary
+*.jpg  binary

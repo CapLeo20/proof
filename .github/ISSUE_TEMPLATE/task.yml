@@ -1,0 +1,34 @@
+name: 新任务
+description: 交给 Claude Code 处理的一个零碎任务
+title: "[任务] "
+labels: [task]
+body:
+  - type: input
+    id: slug
+    attributes:
+      label: 英文短名
+      description: 用作文件夹名，小写英文加连字符
+      placeholder: excel-summary
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: 目标
+      description: 要解决什么问题，做完是什么样子
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: 输入材料
+      description: 需要的文件请先上传到 tasks/<任务名>/input/，或在这里写明从哪里获取
+  - type: textarea
+    id: output
+    attributes:
+      label: 期望产出
+      description: 输出什么文件、什么格式（默认 Markdown）
+  - type: textarea
+    id: notes
+    attributes:
+      label: 约束 / 备注
